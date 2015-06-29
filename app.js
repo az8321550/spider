@@ -2,7 +2,7 @@ var myUtil = require('./util/myUtil');
 var $ = require('cheerio');
 var schedule = require('node-schedule');
 
-
+/*定时任务*/
 var rule = new schedule.RecurrenceRule();
 rule.minute = 0;
 var j = schedule.scheduleJob(rule, function(){
